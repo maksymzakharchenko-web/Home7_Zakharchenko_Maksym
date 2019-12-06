@@ -1,0 +1,57 @@
+.reviews-section {
+  @include bg-position-and-size;
+  background: url("../img/woman-690036.png") no-repeat center;
+  margin-bottom: 100px;
+  background-size: cover;
+  &:before {
+    @include dark-bg;
+  }
+  span {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    color: $primary-color;
+    font-size: 18px;
+    line-height: $centered;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  img {
+    position: relative;
+    display: block;
+    margin: 50px auto;
+    padding-top: 100px;
+  }
+  p {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 797px;
+    color: $primary-color;
+    font-size: 25px;
+    font-style: italic;
+    line-height: $centered;
+    text-align: center;
+  }
+}
+
+/* left and right arrows */
+.quote {
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 60px;
+    content: "\2039";
+    font-size: 80px;
+    color: grey;
+  }
+  &:after {
+    position: absolute;
+    top: 12px;
+    right: 60px;
+    content: "\2039";
+    font-size: 80px;
+    transform: rotate(180deg);
+    color: grey;
+  }
+}

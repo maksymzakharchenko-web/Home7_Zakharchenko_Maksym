@@ -1,0 +1,73 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 80px;
+  a {
+    margin: 0 20px 20px 0;
+    a:nth-child(3), a:nth-child(6) {
+      margin-right: 0;
+    }
+  }
+}
+
+.ipad-project,
+.macbook-project,
+.business-project,
+.games-project,
+.technology-project,
+.other-projects {
+  position: relative;
+  .ipad-project-name,
+  .macbook-project-name,
+  .business-project-name,
+  .games-project-name,
+  .technology-project-name,
+  .other-projects-name {
+    display: none;
+    position: absolute;
+    font-size: 25px;
+    padding: 90px 65px;
+  }
+  .ipad-project-discription,
+  .macbook-project-discription,
+  .business-project-discription,
+  .games-project-discription,
+  .technology-project-discription,
+  .other-projects-discription {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    padding: 135px 45px 0;
+    text-align: center;
+  }
+  .ipad-project-btn,
+  .macbook-project-btn,
+  .business-project-btn,
+  .games-project-btn,
+  .technology-project-btn,
+  .other-projects-btn {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 210px;
+    min-height: $centered;
+    border-radius: 10px;
+    border: 1px solid $primary-color;
+    background: $primary-color;
+    color: $secondary-color;
+    margin: 225px 75px;
+  }
+}
+
+.bg-img:hover {
+  opacity: 0.1;
+}
+
+.secondary-bg-color:hover {
+  background: url("../img/secondary-color.png") no-repeat;
+}
+
+
+

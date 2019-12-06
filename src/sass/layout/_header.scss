@@ -1,0 +1,48 @@
+.top-wrapper {
+  @include bg-position-and-size;
+  background: url("../img/macbook-925614.png") no-repeat center;
+  padding-top: 50px;
+  &:before {
+    @include dark-bg;
+  }
+  p {
+    max-width: 774px;
+    font-size: 25px;
+    line-height: $centered - 10px;
+    margin-bottom: 64px;
+    text-align: center;
+    z-index: $top-priority;
+  }
+}
+
+.logo-and-menu {
+  @include flex-row-space-around;
+}
+
+.decorative-element {
+  color: $secondary-color;
+}
+
+.top-content {
+  @include flex-column;
+}
+
+.buttons {
+  @include flex-row-center;
+  margin-bottom: 100px;
+  a {
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

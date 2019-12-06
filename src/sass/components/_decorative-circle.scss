@@ -1,0 +1,37 @@
+.circle-box {
+  @include flex-row-center;
+  color: $primary-color;
+  cursor: pointer;
+  .circle {
+    width: 36px;
+    height: 36px;
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: $centered;
+    transition: 0.4s;
+    &:before {
+      content: "";
+      top: 8px;
+      left: 8px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 9px solid #384149;
+      position: absolute;
+      z-index: $top-priority;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      top: 12px;
+      left: 9px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 9px solid $primary-color;
+    }
+    &:hover {
+      transform: rotate(360deg);
+      transition: 0.4s;
+    }
+  }
+}

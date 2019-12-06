@@ -1,0 +1,68 @@
+.our-team-imgs {
+  @include flex-row-space-around;
+  margin-bottom: 100px;
+  .worker {
+    @include flex-column;
+    max-width: 235px;
+    img {
+      margin-bottom: 29px;
+      transition: 0.2s;
+      &:hover {
+        border-bottom: 3px solid $secondary-color;
+        transform: scale(1.1);
+        transition: 0.2s;
+        filter: none;
+      }
+    }
+  }
+}
+
+.common-img {
+  max-width: 235px;
+  height: 285px;
+  filter: grayscale(100%);
+}
+
+.worker-name {
+  color: $additional-color;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.worker-desc {
+  color: $additional-color;
+  font-size: 14px;
+}
+
+.worker-social-media {
+  margin-bottom: 15px;
+  a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    filter: contrast(0%);
+    &:nth-child(1) {
+      background: url("../img/social-media-img/facebook.png") no-repeat center;
+      &:hover {
+        filter: none;
+      }
+    }
+    &:nth-child(2) {
+      background: url("../img/social-media-img/twitter.png") no-repeat center;
+      &:hover {
+        filter: none;
+      }
+    }
+    &:nth-child(3) {
+      background: url("../img/social-media-img/google.png") no-repeat center;
+      margin-right: 0;
+      &:nth-child(3):hover {
+        filter: none;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,39 @@
+.subscribe-section {
+  @include bg-position-and-size;
+  @include flex-row-center;
+  align-items: center;
+  min-height: 250px;
+  background: url("../img/tablet-791051.png") no-repeat center;
+  &:before {
+    @include dark-bg;
+  }
+}
+
+.subscribe-section input[type="email"] {
+  position: relative;
+  min-width: 562px;
+  min-height: $centered;
+  border-radius: 10px;
+  padding: 19px 0 18px 24px;
+  color: $additional-color;
+  margin-right: 30px;
+  z-index: $top-priority;
+}
+
+.subscribe-section input[type="button"] {
+  position: relative;
+  min-width: 269px;
+  min-height: $centered;
+  border-radius: 10px;
+  background-color: $secondary-color;
+  border: none;
+  color: $primary-color;
+  transition: 0.5s;
+  z-index: $top-priority;
+  &:hover {
+    background: $primary-color;
+    color: $secondary-color;
+    transition: 0.5s;
+  }
+}
+

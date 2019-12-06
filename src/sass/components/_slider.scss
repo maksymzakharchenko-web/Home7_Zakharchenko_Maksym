@@ -1,0 +1,14 @@
+.slider {
+  @include flex-row-center;
+  .slider-view {
+    margin-right: 17px;
+    width: 13px;
+    height: 13px;
+    background-color: $additional-color;
+    border-radius: 50%;
+    &:hover {
+      transform: scale(1.4);
+      background-color: $secondary-color;
+    }
+  }
+}

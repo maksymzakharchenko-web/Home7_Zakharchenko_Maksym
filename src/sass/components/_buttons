@@ -1,0 +1,36 @@
+.main-button {
+  @include btn-properties;
+  margin-right: 27px;
+  &:hover {
+    background: $secondary-color;
+    transition: 0.5s;
+    border: 1px solid $secondary-color;
+  }
+}
+
+.secondary-button {
+  @include btn-properties;
+  &:hover {
+    background: $secondary-color;
+    transition: 0.5s;
+    border: 1px solid $secondary-color;
+  }
+}
+
+.show-more-projects-btn {
+  text-align: center;
+  line-height: $centered;
+  margin: 0 auto 100px;
+  max-width: 250px;
+  max-height: $centered;
+  color: $additional-color;
+  border: 1px solid silver;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    background: $secondary-color;
+    transition: 0.5s;
+    color: white;
+  }
+}

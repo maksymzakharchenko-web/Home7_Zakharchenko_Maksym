@@ -1,0 +1,23 @@
+.footer-content {
+  background-color: $additional-color;
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.copyright,
+.designed-by,
+.designed-by {
+  color: $primary-color;
+  line-height: $centered - 10px;
+  padding: 20px 0;
+  a {
+    text-decoration: none;
+  }
+  .dot {
+    color: red;
+    font-size: 30px;
+  }
+}
+

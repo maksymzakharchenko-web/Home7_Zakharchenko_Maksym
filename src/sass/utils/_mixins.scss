@@ -1,0 +1,57 @@
+/* background position and background size */
+@mixin bg-position-and-size {
+  position: relative;
+  background-size: cover;
+}
+
+/* dark background */
+@mixin dark-bg {
+  content: "";
+  position: absolute;
+  background: url("../img/wrapper.png") no-repeat center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+/* button properties */
+@mixin btn-properties {
+  position: relative;
+  min-width: 210px;
+  min-height: $centered;
+  border-radius: 10px;
+  line-height: $centered;
+  text-align: center;
+  border: 1px solid silver;
+  transition: 0.5s;
+}
+
+/* img design properties */
+@mixin imgs-design-properties {
+  border: 1px solid grey;
+  padding: 75px;
+  border-radius: 50%;
+  margin-bottom: 38px;
+  max-width: 25%;
+}
+
+/* flex, flex-direction, justify-content */
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin flex-row-space-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

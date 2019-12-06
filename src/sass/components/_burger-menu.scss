@@ -1,0 +1,11 @@
+.main-menu {
+  position: relative;
+  padding: 0 0 0 50px;
+  cursor: pointer;
+  &:after {
+    content: "\2630";
+    font-size: 26px;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+}

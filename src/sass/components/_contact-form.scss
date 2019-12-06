@@ -1,0 +1,127 @@
+.contacts-form {
+  @include bg-position-and-size;
+  background: url("../img/city.png");
+  padding: 100px 0;
+  &:before {
+    @include dark-bg;
+  }
+}
+
+.contacts-form-content {
+  position: relative;
+  margin-bottom: 30px;
+  h2 {
+    color: $primary-color !important;
+    z-index: $top-priority;
+  }
+  p {
+    color: $primary-color;
+    z-index: $top-priority;
+  }
+}
+
+.email-and-subject {
+  @include flex-row-center;
+  margin-bottom: 30px;
+}
+
+.email-and-subject input[type="email"] {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: $primary-color;
+  margin-right: 29px;
+  padding-left: 19px;
+  color: $additional-color;
+  z-index: $top-priority;
+}
+
+.email-and-subject input[type="text"] {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: $primary-color;
+  padding-left: 20px;
+  color: $additional-color;
+  z-index: $top-priority;
+}
+
+.client-message {
+  @include flex-row-center;
+  margin-bottom: 30px;
+}
+
+.client-message textarea {
+  border-radius: 10px;
+  min-width: 829px;
+  min-height: 199px;
+  padding-left: 20px;
+  padding-top: 18px;
+  color: $additional-color;
+  z-index: $top-priority;
+}
+
+.submit-btn-and-social-media {
+  @include flex-row-center;
+}
+
+.submit-button {
+  z-index: $top-priority;
+}
+
+.submit-button input[type="button"] {
+  width: 210px;
+  height: 50px;
+  border-radius: 10px;
+  background: $secondary-color;
+  color: $primary-color;
+  border: none;
+  transition: 0.2s;
+  margin-right: 290px;
+  z-index: $top-priority;
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+    transition: 0.2s;
+  }
+}
+
+.our-social-media {
+  position: relative;
+}
+
+.our-social-media a {
+  display: inline-block;
+  margin-right: 20px;
+  width: 43px;
+  height: 43px;
+  z-index: $top-priority;
+  transition: 0.5s;
+  &:hover {
+    transform: rotate(-360deg);
+    transition: 0.5s;
+    filter: contrast(500%);
+  }
+  &:nth-child(1) {
+    background: url("../img/footer-social-media/facebook.png") no-repeat center;
+  }
+  &:nth-child(2) {
+    background: url("../img/footer-social-media/twitter.png") no-repeat center;
+  }
+  &:nth-child(3) {
+    background: url("../img/footer-social-media/google.png") no-repeat center;
+  }
+  &:nth-child(4) {
+    background: url("../img/footer-social-media/be.png") no-repeat center;
+  }
+  &:nth-child(5) {
+    background: url("../img/footer-social-media/hz.png") no-repeat center;
+  }
+}
+
+
+
+
+
+
+

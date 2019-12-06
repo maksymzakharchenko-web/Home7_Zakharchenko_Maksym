@@ -1,0 +1,13 @@
+.container {
+  max-width: $standart-layout-width;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo-and-menu,
+.subscribe-section,
+.our-works-content,
+.reviews-section,
+.our-team-content {
+  margin-bottom: 100px;
+}
